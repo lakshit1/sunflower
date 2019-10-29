@@ -19,5 +19,5 @@ jobs:
     - uses: actions/upload-artifact@master 
       with: 
         name: sunflower
-      path: app/build/outputs/
+        path: app/build/outputs/
 
