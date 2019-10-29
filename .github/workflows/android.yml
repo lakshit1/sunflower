@@ -14,4 +14,10 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew assembledebug
+
+    - uses: actions/upload-artifact@master 
+      with: 
+        name: sunflower
+      path: app/build/outputs/
+
